@@ -1,0 +1,53 @@
+/*home page section 1*/
+.top_margin_slider{	margin-top: 10%;}
+.main_fourth_button_contanier
+{	margin:4% auto 0 auto; }
+
+.main_fourth_button
+{
+	padding: 5% 4px;
+	word-wrap: break-word;
+	border-color:1px solid #fff;
+	color: #fff;
+}
+
+.main_three_button:hover{	background: #0b9444;	opacity: 1;	color: #fff;	}
+.mtb1:hover	{	border-color: #0b9444;	color: #0b9444;}
+.mtb2:hover	{	word-wrap:break-word;	border-color: #ef4036 ;	color: #ef4036;}
+.mtb3:hover	{	border-color: #000033;	color: #000033;}
+.mtb4{	border-color: #fff;	color: #fff;	}
+
+/*.....home page section two.....*/
+.box
+{
+	border-radius:22px;
+	text-align:center;
+	border:1px solid #baf4ec;
+	padding-bottom:10px;
+	text-align: center;	
+	margin-top: 10px;
+	overflow:hidden;
+}
+.box:hover
+{
+	box-sizing: border-box;
+	cursor:pointer;
+}
+.inner_container
+{
+	margin-top:2%;
+}
+
+i
+{
+	margin-top:30px;
+    width: 48px;
+    height: 53px; 
+}
+.job-board-text:hover	{	color: green;	}
+/*..section featured freelencer..*/
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+ }

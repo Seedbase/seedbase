@@ -1,0 +1,177 @@
+*{
+	word-wrap:break-word;
+	/*font-family: "Helvetica Neue", sans-serif;*/
+}
+.page-wrapper
+{
+	width: 100%;
+	overflow:hidden !important;
+}
+a:link{cursor:pointer;text-decoration: none !important;}
+a:active{cursor:pointer;text-decoration: none !important;}
+a:hover{cursor:pointer;text-decoration: underline !important;}
+a:visted{cursor:pointer;text-decoration: none !important;}
+.section{ position:relative !important;	height: auto; padding:4% 0;	width: 100%; clear:both; margin:0 !important;}
+.section_1{	background-color: #ccc;overflow: hidden; background:url('../img/banner1.jpg') no-repeat 100% 100%;background-size: cover; background-attachment: fixed;z-index: -1;}
+.section_2{	background: #000; background-size:100% 100%; background-attachment: fixed; z-index: 1; }
+.section_3{	background: #fff 100% 100%;padding:5% 0 ;height: auto; background-size:100% 100%; background-attachment: fixed; z-index: 2;}
+.section_4{	background: #000; height:auto; padding:8% 0;background-size:100% 100%; background-attachment: fixed; z-index: 3;}
+.section_5{	background: #ccc; background-size:100% 100%; background-attachment: fixed; z-index: 4;}
+.section_6{	background: #ccc; height:auto; background-size:100% 100%; background-attachment: fixed; z-index: 4;}
+.job-board{background: #eee; height:auto; background-size:100% 100%; background-attachment: fixed; z-index: 4;}
+
+/*/...............	all font background color 			...............*/
+.bold{font-weight: bold;}
+.padding{padding:10px 4px !important;}
+.green{background: #47B400 !important;color:#fff !important;}
+.purple{background:#8848CA !important;color:#fff !important;}
+.orange{background:#E48700 !important;color:#fff !important;}
+.black{background: #000;color: #fff}
+.color_white{color:#fff;}
+.align{	text-align: center;}
+.color_purple{color:#8848CA  }
+.color_green{color: #47B400;}
+.color_orange{color: #E48700}
+.button{	padding: 24px 16px !important;	text-align: center;	color: #fff;
+			border: 1px solid #ccc;
+			border-radius: 5px;					
+		}
+.letter-space{	letter-spacing: 2px;	}
+.margin-top{	margin-top:25px !important;	}
+.margin_bottom{margin-bottom:1%}
+.margin_top{margin-top: 5%}
+.top_margin{margin-top: 20px;}
+.move{margin-left:5% !important;}
+.padding_bottom  {  	padding-bottom:1.5%;  }
+.rounded{  	border-radius: 30px;  }
+/*/...............	all font endz background color 			...............*/
+
+
+/*...... navbar changes start ....................*/
+
+.navbar-brand{	padding: 0px 10px;	position: relative;	top: -20px;	}
+.nav-padding{	padding:16px 0;}
+.list-nav{	border: 1px solid #ccc;	border-radius: 4px;	margin-left: 10px;	}
+.navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/*.......... navbar changes endz ....................*/
+
+
+
+
+
+/* ************************ 	Footer bottom 		***************************** */
+
+/* Section: Still Have Question
+******************************/
+.still_have_qustion .container
+{
+	width: 50%;
+	margin: 0 auto;
+}
+.move{margin-left:5% !important;}
+.margin-top{
+	margin-top:25px !important;
+}
+ .footer  {  	font-size: 14px;  }
+ .footer ul{  	padding-left:20px;  }
+ .margin-left{  	margin-left:10px;  }
+ .footer ul li  {  	text-decoration: none;  	list-style: none;  	color: #fff;  } 
+ .footer ul li a{  	color: #fff;  	text-decoration: none;  }
+ .footer ul li a:hover  {  	text-decoration: underline;  }
+ .padding_bottom
+  {
+  	padding-bottom:1.5%;
+  }
+  .rounded{
+  	border-radius: 30px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*....................................
+			media query all home page setting 
+						................................*/
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+		.section_1{	padding:5% 0; top: 0%;height:100vh;}
+		.section_2{	padding:7% 0; }
+		.section_3{	padding:2% 0; }
+		.section_4{	padding:2% 0; }
+		.navbar-brand img	{	width: 25vh;position: relative;top: 10px;	}
+		.main_three_button{padding: 30% 1% !important;}
+		.main_button_container{width: 50%;padding: 1%;}
+		.main_fourth_button{padding: 1%;}
+		.main_fourth_button_contanier{width: 30%;margin:0 auto !important;}
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+		.nav_button{	font-size: 12px;	}
+		.section_1{	 padding:4% 0;}
+		.section_2{	 padding:4% 0;}
+		.section_3{	 padding:4% 0;}
+		.section_4{	 padding:4% 0;}
+		.navbar-brand img	{	width: 5vh;position: relative;top: 25px;	}
+		.main_button_container{width: 30vh; margin:0 auto !important;}
+		.main_fourth_button_contanier{width: 30%;margin:0 auto !important;}
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 770px) and (max-width: 991px) {
+		.nav_button{font-size: 10px;	}
+		.navbar-brand img	{	width: 30vh;position: relative;top: 25px;	}
+		.h2_tag{font-size: 18px;}
+		.h1_tag{font-size: 30px;}
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 480px) and (max-width: 769px) {
+		.nav-padding{	padding: 10px 0px}
+		.fa_small_in_media{font-size: 3em !important;}
+		.navbar-brand img	{	width: 25vh;position: relative;top: 23px;left: -25px;	}	
+		.h2_tag{font-size: 15px;}
+		.h1_tag{font-size: 24px;}
+		.button{padding: 10px 0px;}
+
+}
+
+/* Portrait phones and smaller */
+@media (min-width: 320px) and (max-width: 479px) {
+		.nav_button{	width: 100%;}	
+		.navbar-brand img	{	width: 25vh;position: relative;top: 20px;margin-left: -25px;	}
+		.nav-padding{padding: 5px 0px;}
+		.h2_tag{font-size: 12px;}
+		.h1_tag{font-size: 18px;}
+}
+@media(min-width: 240px) and (max-width: 319px) {
+		.section_1{padding:5% 0;top:10vh;}
+		.navbar-brand img	{	width: 20vh;position: relative;top: 27px;margin-left: -30px; 	}
+		.nav-padding{padding:0;}
+		.main_fourth_button_contanier{width: 100% !important;margin:0 auto !important;font-size: 8px;font-weight: bold;}*/
+		.h2_tag{font-size: 10px;}
+		.h1_tag{font-size: 14px;}
+		ul li>.list-nav{	font-size:8px !important;width:20vh;border:1px solid #282828;margin-left:0px;	}
+		/*ul{	height:80vh;	}*/
+		ul li {		height:20vh;	}
+}
