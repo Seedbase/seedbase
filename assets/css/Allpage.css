@@ -2,6 +2,10 @@
 	word-wrap:break-word;
 	/*font-family: "Helvetica Neue", sans-serif;*/
 }
+body
+{
+	background: #ededed; 
+}
 .page-wrapper
 {
 	width: 100%;
@@ -9,16 +13,18 @@
 }
 a:link{cursor:pointer;text-decoration: none !important;}
 a:active{cursor:pointer;text-decoration: none !important;}
-a:hover{cursor:pointer;text-decoration: underline !important;}
+a:hover{cursor:pointer;text-decoration:none !important;}
 a:visted{cursor:pointer;text-decoration: none !important;}
-.section{ position:relative !important;	height: auto; padding:4% 0;	width: 100%; clear:both; margin:0 !important;}
+.section{position:relative !important;	height: auto; padding:4% 0;	width: 100%; clear:both; margin:0 !important;}
 .section_1{	background-color: #ccc;overflow: hidden; background:url('../img/banner1.jpg') no-repeat 100% 100%;background-size: cover; background-attachment: fixed;z-index: 1;}
-.section_2{	background: #000; background-size:100% 100%; background-attachment: fixed; z-index: 1; }
-.section_3{	background: #fff 100% 100%;padding:5% 0 ;height: auto; background-size:100% 100%; background-attachment: fixed; z-index: 2;}
-.section_4{	background: #000; height:auto; padding:8% 0;background-size:100% 100%; background-attachment: fixed; z-index: 3;}
-.section_5{	background: #ccc; background-size:100% 100%; background-attachment: fixed; z-index: 4;}
+.section_2{width: 98% ;margin:1% auto !important;	background: #fff; background-size:100% 100%; background-attachment: fixed; z-index: 1; }
+.section_3{width: 98% ;margin:1% auto !important;	background: #fff;padding: 0 ;height: auto; background-size:100% 100%; background-attachment: fixed; z-index: 2;}
+.section_4{width: 98% ;margin:1% auto !important;	background: #fff; height:auto; padding:8% 0;background-size:100% 100%; background-attachment: fixed; z-index: 3;}
+.section_5{width: 98% ;margin:8% 1% 1% 1% !important;	background: #fff; background-size:100% 100%; background-attachment: fixed; z-index: 4;}
 .section_6{	background: #ccc; height:auto; background-size:100% 100%; background-attachment: fixed; z-index: 4;}
-.job-board{background: #eee; height:auto; background-size:100% 100%; background-attachment: fixed; z-index: 4;}
+.job-board{width: 98% ;margin:1% auto !important;background: #fff; height:auto; background-size:100% 100%; background-attachment: fixed; z-index: 4;}
+.section-testimonials{width: 98% ;margin:1% auto !important;background: #fff; }
+.still_have_qustion{width: 98% ;margin:1% auto !important;	background: #fff;}
 
 /*/...............	all font background color 			...............*/
 .bold{font-weight: bold;}

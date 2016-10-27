@@ -2,23 +2,20 @@
 	word-wrap:break-word !important;
 	font-family: "Helvetica Neue", sans-serif ;
 }
+* a:hover
+{
+text-decoration: none;
+}
 a:link{cursor:pointer;text-decoration: none !important;}
 a:active{cursor:pointer;text-decoration: none !important;}
-a:hover{cursor:pointer;text-decoration: underline !important;}
+a:hover{cursor:pointer;text-decoration: none !important;}
 a:visted{cursor:pointer;text-decoration: none !important;}
+
 .page-wrapper
 {
 	width: 100% !important;
 	overflow:hidden !important;
 }
-/*5 session*/
-.section{ position:relative !important;	height: auto; padding:4% 0;	width: 100%; clear:both;}
-.section_1{	background-color: #ccc;overflow: hidden; background:url('../img/banner1.jpg') no-repeat 100% 100%;background-size: cover; background-attachment: fixed;z-index: 1;}
-.section_2{	background: #000; background-size:100% 100%; background-attachment: fixed; z-index: 1; }
-.section_3{	background: #fff 100% 100%; background-size:100% 100%; background-attachment: fixed; z-index: 2;}
-.section_4{	background: #000; height:auto; padding:4% 0; background-size:100% 100%; background-attachment: fixed; z-index: 3;}
-.section_5{	background: #ccc; background-size:100% 100%; background-attachment: fixed; z-index: 4;}
-.section_6{	background: #ccc; height:auto; background-size:100% 100%; background-attachment: fixed; z-index: 4;}
 
 /*#height{
 	height:100vh;
@@ -58,7 +55,7 @@ a:visted{cursor:pointer;text-decoration: none !important;}
 /*slider_banner*/
 .top_margin_slider
 {
-	margin-top: 5%;
+	margin-top: 10%;
 }
 .main_button_container
 {
@@ -97,19 +94,16 @@ a:visted{cursor:pointer;text-decoration: none !important;}
 
 .mtb1:hover
 {
-	border-color: #0b9444;
-	color: #0b9444;
+	background: #47B400 !important;
+	color:#fff !important;
 }
 .mtb2:hover
 {
-	word-wrap:break-word;
-	border-color: #ef4036 ;
-	color: #ef4036;
+	background:#E48700 !important;color:#fff !important;
 }
 .mtb3:hover
 {
-	border-color: #000033;
-	color: #000033;
+	background:#8848CA !important;color:#fff !important;
 }
 .mtb4{
 	border-color: #fff;
@@ -154,9 +148,8 @@ a:visted{cursor:pointer;text-decoration: none !important;}
 .box
 {
 	/*box-sizing:border-box;*/
-	border-radius:22px;
 	text-align:center;
-	border:1px solid #baf4ec;
+	border-bottom: 1px solid #000;
 	padding-bottom:10px;
 	text-align: center;	
 	margin-top: 10px;
@@ -165,9 +158,7 @@ a:visted{cursor:pointer;text-decoration: none !important;}
 .box:hover
 {
 	box-sizing: border-box;
-	border-radius:22px;
-	border:1px solid #29e9ac;
-	cursor:pointer;
+
 }
 .inner_container
 {
@@ -185,7 +176,7 @@ i
 }
 .fa-img
 {
-	color:#faaaff;
+	color:#000;
 	text-align:center;
 	margin-top:30px;
 	padding-bottom: 10px;
@@ -197,13 +188,13 @@ i
 }
 .btn-lg
 {
-	background-color:#29e9ac;
-	color:#fff;
+	border: 1px solid #47B400;
+	background: #fff  !important;color:#47B400 !important;
 }
 .btn-lg:hover
 {
-
-	color:#fff;
+	border: 1px solid #47B400;
+	background: #47B400 !important;color:#fff !important;
 }
 
 /*section 2 css endz*/
@@ -412,8 +403,13 @@ vertical-align: middle;
 	border: 1px solid #ccc;
 	border-radius: 5px;
 }
-.button:hover{
-	cursor:pointer;
+.FOURTH_BUTTON
+{
+	padding: 15Px 13px !important;
+	text-align: center;
+	color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 5px;
 }
 .letter-space{
 	letter-spacing: 2px;
@@ -427,13 +423,21 @@ vertical-align: middle;
 			...............*/
 
 /*second page css STARTS here */
-.section-testimonials{top:400%;height: auto;padding:4% 0;}
+.section-testimonials
+{
+	width: 98%;
+	margin: 1% auto;
+	background: #fff;
+}
 
 
 /* Section: Testimonials
 ******************************/
 .section-testimonials {
-  padding-bottom: 100px!important;
+
+  width: 98%;
+	margin: 1% auto;
+	background: #fff;
 }
 .section-testimonials .carousel-indicators {
   bottom: -60px;
@@ -567,6 +571,6 @@ section#makeStart{
   	padding-bottom:1.5%;
   }
   .rounded{
-  	border-radius: 30px;
+  	border-radius: 50%;
   }
 /*footer page endz here*/
