@@ -179,6 +179,6 @@ a:visted{cursor:pointer;text-decoration: none !important;}
 		.h2_tag{font-size: 10px;}
 		.h1_tag{font-size: 14px;}
 		ul li>.list-nav{	font-size:8px !important;width:20vh;border:1px solid #282828;margin-left:0px;	}
-		/*ul{	height:80vh;	}*/
-		ul li {		height:20vh;	}
+		ul{	height:auto; padding:1%;	}
+		ul li {		height:auto; padding:1%;	}
 }
