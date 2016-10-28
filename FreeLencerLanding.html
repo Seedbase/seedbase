@@ -16,11 +16,11 @@
 	<link rel="shortcut icon" href="assets/img/seedbase_icon.png" type="image/x-icon"/>
 	<link rel="stylesheet" href="assets/css/libs/animate.css">
 	<link rel="stylesheet" href="assets/css/site.css">
-	<!-- <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css"> -->
+	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/Allpage.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 	<!-- link Endz here -->
 	<style>
 		.wow:first-child {
@@ -51,13 +51,36 @@
 
 	<script src="assets/js/jquery.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
+	<style>
+	  /* Note: Try to remove the following lines to see the effect of CSS positioning */
+	  .affix {
+	      top:0;
+	      width: 100%;
+	      z-index: 9999 !important;
+	  }
+	  .navbar {
+	      margin-bottom: 0px;
+	  }
+
+	  .affix ~ .container-fluid {
+	     position: relative;
+	     top: 50px;
+	  }
+	  .center{
+	  	margin-left:350px;
+	  }
+	  /*li>a{width:; padding:10px 16px !important;}
+	  .side-padding{
+	  	padding:10px 16px !important;
+	  }*/
+	  </style>
 </head>
 <body>	
 <div class="page-wrapper">
 	
 
 	<!-- Fixed navbar start -->
-	  <nav class="navbar navbar-default navbar-fixed-top nav-padding" role="navigation">
+	  <nav class="navbar navbar-default  nav-padding" role="navigation">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="col-md-4 col-sm-4 col-xs-3">
@@ -83,6 +106,7 @@
 				         <li class=" navbar-btn nav_button"><a class="list-nav"> HOW IT WORKS </a> </li>
 				         <li class=" navbar-btn nav_button"><a class="list-nav"> SIGN UP </a> </li>
 			         	 <li class=" navbar-btn nav_button"><a href="LoginPage.html" class="list-nav"> LOG IN </a></li>
+			         	 <li class=" navbar-btn nav_button"><a href="#faq" class="list-nav"> FAQ </a></li>
 				    </ul>
 				</div>     
 
@@ -94,10 +118,9 @@
 	<!-- slider banner starts -->
 
 <section class="section section_1 ">	
-<div class="container-fluid " style="margin-top:18vh;">
+<div class="container-fluid " style="margin-top:12vh;">
 	<div class="row ">
-		<div class="col-md-12 " style"
-		>
+		<div class="col-md-12 ">
 			<div class="col-xs-12 text-capitalize wow fadeInDownBig text-center  letter-space">
 				<h2 class=" color_orange" >
 					<strong>Build Your Freelance Profile Here</strong>
@@ -114,8 +137,8 @@
 				<div class="container margin-top ">
 					<div class="col-md-6 col-md-offset-3  wow fadeInUpBig">
 						<a href="LoginPage.html">
-						<div class="container" style="width: 50vw;margin: 0 auto;">
-							<div class=" button navbar-btn col-xs-12  orange letter-space"> 
+						<div class="col-md-6 col-md-offset-3">
+							<div class=" button navbar-btn  orange letter-space"> 
 								<strong >Get Started</strong>
 							</div>	
 						</div>
@@ -129,12 +152,39 @@
 
 </section>
 
+<section class="section  background-white">
+	
+	<div data-spy="scroll" data-target=".navbar" data-offset="20">
+		<nav class="navbar navbar-default" data-spy="affix" data-offset-top="850" style="background:#fff; border-top: none;">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		       <!--  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		      </button> -->
+		    </div>
+		    <div class="col-md-offset-3">
+		      <div class="collapse navbar-collapse" id="myNavbar">
+		        <ul class="nav navbar-nav">
+		          <li class="active"> <a href="#makeStart" > Make the Start </a> </li>
+		          <li> <a href="#gettingHired"> Getting Hired </a> </li>
+		          <li> <a href="#growProfile"> Grow your Profile </a> </li>
+		          <li> <a href="#gettingPaid"> Getting Paid </a> </li>
+		        </ul>
+		      </div>
+		    </div>
+		  </div>
+		</nav>
+	</div>
+
+</section>
 <section class="section section_2 background-white">
 	<div class="container">
 
-		<div class="row top_margin">
-			<div class="col-md-12">
-				<div class="col-md-3 ">
+		<!-- <div class="row top_margin"> -->
+			<!-- <div class="col-md-12"> -->
+				<!-- <div class="col-md-3 ">
 					<div class="col-md-12 box">
 						<a>
 							<i class="fa  fa-life-bouy fa-5x fa_small_in_media  color_orange" aria-hidden="true"></i>
@@ -169,124 +219,131 @@
 					<div class="col-md-6">
 						<img src="" alt="" class="img-responsive">
 					</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 margin-top" >
-					<div class="col-md-6">
-						<div class="col-md-12">
-							<div class="row">
-								<h2 class="color_orange text-capitalize"> <strong>What projects can I find?  </strong></h2>
-								<hr>
+			</div> -->
+			<section id="makeStart" class="section">
+				<div class="row">
+					<div class="col-md-12 margin-top" >
+						<div class="col-md-6">
+							<div class="col-md-12">
+								<div class="row">
+									<h2 class="color_orange text-capitalize"> <strong>What projects can I find?  </strong></h2>
+									<hr>
+								</div>
+							</div>
+							<div class="col-md-12 text-justify">
+								<p> Our client submit requests for various projects across;
+									<ul>
+										<li>3D Modelling</li>
+										<li>3D Printing</li>
+										<li>CAD Designing</li>
+										<li>Web Designing</li>
+										<li>Data Analytics</li>
+										<li>UX Designing</li>
+										<li>App Development</li>
+										<li>Channel Development</li>
+										<li>Social Media Marketing</li>
+										<li>Email Marketing</li>
+										<li>Business Model Consulting</li>
+									</ul> 
+									
+								</p>
 							</div>
 						</div>
-						<div class="col-md-12 text-justify">
-							<p> Our client submit requests for various projects across;
-								<ul>
-									<li>3D Modelling</li>
-									<li>3D Printing</li>
-									<li>CAD Designing</li>
-									<li>Web Designing</li>
-									<li>Data Analytics</li>
-									<li>UX Designing</li>
-									<li>App Development</li>
-									<li>Channel Development</li>
-									<li>Social Media Marketing</li>
-									<li>Email Marketing</li>
-									<li>Business Model Consulting</li>
-								</ul> 
-								
-							</p>
-						</div>
-					</div>
-					<div class="col-md-6  margin-top ">
-						<img src="assets/img/free-project.jpg" alt="project" class="img-responsive img-rounded rounded">
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 margin-top" >
-					<div class="col-md-6  margin-top">
-						<img src="assets/img/free-hired.png" alt="mentoring" class="img-responsive img-rounded rounded">
-					</div>
-					<div class="col-md-6">
-						<div class="col-md-12">
-							<div class="row">
-								<h2 class="color_orange text-capitalize"> <strong>How do I get hired by a Client?  </strong></h2>
-								<hr>
-							</div>
-						</div>
-						<div class="col-md-12 text-justify">
-							<p> 
-								Sign up and create a basic profile
-                                 Make sure your profile is compelling. A compelling profile is     
-                                 -represents your strongest maker or creative skill/talent
-                                 -meets with the skill/talent request of the project applied for
-                                 Search jobs within the job board or project category of interest
-                                 Hit the Apply button and fill in the short application form
-							</p>
+						<div class="col-md-6  margin-top ">
+							<img src="assets/img/free-project.jpg" alt="project" class="img-responsive img-rounded rounded">
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 margin-top" >
-					<div class="col-md-6">
-						<div class="col-md-12">
-							<div class="row">
-								<h2 class="color_orange text-capitalize"> <strong>How do I build UP?</strong></h2>
-								<hr>
+			</section>
+			<section id="gettingPaid" class="section">
+				<div class="row">
+					<div class="col-md-12 margin-top" >
+						<div class="col-md-6  margin-top">
+							<img src="assets/img/free-hired.png" alt="mentoring" class="img-responsive img-rounded rounded">
+						</div>
+						<div class="col-md-6">
+							<div class="col-md-12">
+								<div class="row">
+									<h2 class="color_orange text-capitalize"> <strong>How do I get hired by a Client?  </strong></h2>
+									<hr>
+								</div>
+							</div>
+							<div class="col-md-12 text-justify">
+								<p> 
+									Sign up and create a basic profile
+	                                 Make sure your profile is compelling. A compelling profile is     
+	                                 -represents your strongest maker or creative skill/talent
+	                                 -meets with the skill/talent request of the project applied for
+	                                 Search jobs within the job board or project category of interest
+	                                 Hit the Apply button and fill in the short application form
+								</p>
 							</div>
 						</div>
-						<div class="col-md-12 text-justify">
-							<p> 
-								Find skills building modules within our Resource Inventory to 
-								Improve your performance on projects
-								Target specific skills building modules which you wish to build  
-								Request recommendations from residents to add to profile. This 
-								Also improves your chances of becoming a featured freelancers.
-								Featured Freelancers can send out proposals at higher negotiable rates
-								Improve your profile with recognised skills certifications
+					</div>
+				</div>
+			</section>
+			<section id="growProfile" class="section">
+				<div class="row">
+					<div class="col-md-12 margin-top" >
+						<div class="col-md-6">
+							<div class="col-md-12">
+								<div class="row">
+									<h2 class="color_orange text-capitalize"> <strong>How do I build UP?</strong></h2>
+									<hr>
+								</div>
+							</div>
+							<div class="col-md-12 text-justify">
+								<p> 
+									Find skills building modules within our Resource Inventory to 
+									Improve your performance on projects
+									Target specific skills building modules which you wish to build  
+									Request recommendations from residents to add to profile. This 
+									Also improves your chances of becoming a featured freelancers.
+									Featured Freelancers can send out proposals at higher negotiable rates
+									Improve your profile with recognised skills certifications
 
-							</p>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<img src="assets/img/free-paid.jpg" alt="mentorship" class="img-responsive img-rounded rounded">
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 margin-top" >
-					<div class="col-md-6">
-						<img src="assets/img/free-build.png" alt="value return" class="img-responsive img-rounded rounded">
-					</div>
-					<div class="col-md-6">
-						<div class="col-md-12">
-							<div class="row">
-								<h2 class="color_orange text-capitalize"> <strong> How do I get paid? </strong></h2>
-								<hr>
+								</p>
 							</div>
 						</div>
-						<div class="col-md-12 text-justify">
-							<p> 
-								Payments are made securely through SeedBase platform
-                                You will receive your payment following instructions finalised 
-                                 In negotiations with the Client. i.e. via Paypal  and per;
-                                  -Milestones or
-                                  -20/80 payment (this is 20% upon commencement and 80%
-                                   Upon successful completion)<br><br>
-                                  Other payment options may include
-                                  <ul>
-                                  	<li>	Volunteer service</li>
-                                  	<li>	Equity/Commission/Royalty</li>
-                                  	<li>	Retainer agreement</li>
-                                  </ul>
-							</p>
+						<div class="col-md-6">
+							<img src="assets/img/free-paid.jpg" alt="mentorship" class="img-responsive img-rounded rounded">
 						</div>
 					</div>
 				</div>
-			</div>
-			
+			</section>
+			<section id="gettingPaid" class="section">
+				<div class="row">
+					<div class="col-md-12 margin-top" >
+						<div class="col-md-6">
+							<img src="assets/img/free-build.png" alt="value return" class="img-responsive img-rounded rounded">
+						</div>
+						<div class="col-md-6">
+							<div class="col-md-12">
+								<div class="row">
+									<h2 class="color_orange text-capitalize"> <strong> How do I get paid? </strong></h2>
+									<hr>
+								</div>
+							</div>
+							<div class="col-md-12 text-justify">
+								<p> 
+									Payments are made securely through SeedBase platform
+	                                You will receive your payment following instructions finalised 
+	                                 In negotiations with the Client. i.e. via Paypal  and per;
+	                                  -Milestones or
+	                                  -20/80 payment (this is 20% upon commencement and 80%
+	                                   Upon successful completion)<br><br>
+	                                  Other payment options may include
+	                                  <ul>
+	                                  	<li>	Volunteer service</li>
+	                                  	<li>	Equity/Commission/Royalty</li>
+	                                  	<li>	Retainer agreement</li>
+	                                  </ul>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 			</div>
 	    </div>
 	</div>
@@ -318,7 +375,7 @@
 </section>
 
 
-<section class="section">
+<section class="section" id="faq">
 	<div class="container">
 
 <div class="page-header text-center">

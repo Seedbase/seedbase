@@ -50,13 +50,36 @@
 
 	<script src="assets/js/jquery.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
+	<style>
+	  /* Note: Try to remove the following lines to see the effect of CSS positioning */
+	  .affix {
+	      top:0;
+	      width: 100%;
+	      z-index: 9999 !important;
+	  }
+	  .navbar {
+	      margin-bottom: 0px;
+	  }
+
+	  .affix ~ .container-fluid {
+	     position: relative;
+	     top: 50px;
+	  }
+	  .center{
+	  	margin-left:350px;
+	  }
+	  /*li>a{width:; padding:10px 16px !important;}
+	  .side-padding{
+	  	padding:10px 16px !important;
+	  }*/
+	  </style>
 </head>
 <body>	
 <div class="page-wrapper">
 	
 
 	<!-- Fixed navbar start -->
-	  <nav class="navbar navbar-default navbar-fixed-top " role="navigation">
+	  <nav class="navbar navbar-default " role="navigation">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="col-sm-2 col-xs-8">
@@ -140,8 +163,34 @@
 <!-- /slider banner endz -->
 </section>
 
-<section class="section section_2">
-	<div class="container">
+<section class="section section_2 background-white">
+
+	<div data-spy="scroll" data-target=".navbar" data-offset="20">
+		<nav class="navbar navbar-default" data-spy="affix" data-offset-top="800" style="background:#fff; border-top: none;">
+		  <div class="container-fluid">
+		    <!-- <div class="navbar-header"> -->
+		        <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		      </button>
+ -->		      <!-- <a class="navbar-brand" href="#"><img src="" alt="" ></a> -->
+		    <!-- </div> -->
+		    <div class="col-md-offset-3">
+		      <div class="collapse navbar-collapse" id="myNavbar">
+		        <ul class="nav navbar-nav">
+		          <li class="active"><a href="#makeHire" >Join the Pool</a></li>
+		          <li><a href="#negotiationCollaboration">The Mentor Click</a></li>
+		          <li><a href="#makingPayment">Obtain Residency</a></li>
+		          <li><a href="#protection"> Gain Mentor High </a> </li>
+		        </ul>
+		      </div>
+		    </div>
+		  </div>
+		</nav>
+	</div>
+
+	<!-- <div class="container">
 		<div class="row top_margin">
 			<div class="col-md-12">
 				<div class="col-md-3 ">
@@ -179,8 +228,8 @@
 					<div class="col-md-6">
 						<img src="" alt="" class="img-responsive">
 					</div>
-			</div>
-			<section id="joinPool">
+			</div> -->
+			<section id="joinPool" class="section ">
 				<div class="col-md-12 margin-top" >
 					<div class="col-md-6">
 						<div class="col-md-12">
@@ -215,7 +264,7 @@
 					</div>
 				</div>
 			</section>
-			<section id="mentorClick">
+			<section id="mentorClick" class="section ">
 				<div class="col-md-12 margin-top" >
 					<div class="col-md-6  margin-top">
 						<img src="assets/img/mentoring.jpg" alt="mentoring" class="img-responsive img-rounded rounded">
@@ -235,7 +284,7 @@
 					</div>
 				</div>
 			</section>
-			<section id="obtainResidency">
+			<section id="obtainResidency" class="section ">
 				<div class="col-md-12 margin-top" >
 					<div class="col-md-6">
 						<div class="col-md-12">
@@ -257,7 +306,7 @@
 					</div>
 				</div>
 			</section>
-			<section id="obtainResidency">
+			<section id="obtainResidency" class="section ">
 				<div class="col-md-12 margin-top" >
 					<div class="col-md-6">
 						<img src="assets/img/value.jpg" alt="value return" class="img-responsive img-rounded rounded">

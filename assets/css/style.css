@@ -175,14 +175,14 @@ a:visted{cursor:pointer;text-decoration: none !important;}
 	margin-top:2%;
 }
 
-i
+/*i
 {
-	/*color:#29e9ac;*/
+	color:#29e9ac;
 	margin-top:30px;
     width: 48px;
     height: 53px;
   
-}
+}*/
 .fa-img
 {
 	color:#faaaff;
@@ -414,9 +414,9 @@ vertical-align: middle;
 	border: 1px solid #ccc;
 	border-radius: 5px;
 }
-.button:hover{
+/*.button:hover{
 	cursor:pointer;
-}
+}*/
 .letter-space{
 	letter-spacing: 2px;
 }
@@ -519,9 +519,7 @@ vertical-align: middle;
 .hover:hover{
 	color:#E48700;
 }
-section#makeStart{
-	height:100vh;
-}
+
 .background-white{
 	background:#fff !important;
 }

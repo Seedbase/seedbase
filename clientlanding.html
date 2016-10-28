@@ -50,13 +50,36 @@
 
 	<script src="assets/js/jquery.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
+	<style>
+	  /* Note: Try to remove the following lines to see the effect of CSS positioning */
+	  .affix {
+	      top:0;
+	      width: 100%;
+	      z-index: 9999 !important;
+	  }
+	  .navbar {
+	      margin-bottom: 0px;
+	  }
+
+	  .affix ~ .container-fluid {
+	     position: relative;
+	     top: 50px;
+	  }
+	  .center{
+	  	margin-left:350px;
+	  }
+	  /*li>a{width:; padding:10px 16px !important;}
+	  .side-padding{
+	  	padding:10px 16px !important;
+	  }*/
+	  </style>
 </head>
 <body>	
 <div class="page-wrapper">
 	
 
 	<!-- Fixed navbar start -->
-	  <nav class="navbar navbar-default navbar-fixed-top nav-padding" role="navigation">
+	  <nav class="navbar navbar-default nav-padding" role="navigation">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="col-md-4 col-sm-4 col-xs-3">
@@ -82,6 +105,7 @@
 				         <li class=" navbar-btn nav_button"><a class="list-nav"> HOW IT WORKS </a> </li>
 				         <li class=" navbar-btn nav_button"><a class="list-nav"> SIGN UP </a> </li>
 			         	 <li class=" navbar-btn nav_button"><a href="LoginPage.html" class="list-nav"> LOG IN </a></li>
+			         	 <li class=" navbar-btn nav_button"><a href="#faq" class="list-nav"> FAQ </a></li>
 				    </ul>
 				</div>     
 
@@ -150,7 +174,7 @@
 					<div class="col-md-6 col-md-offset-3 wow fadeInUpBig">
 						<a href="LoginPage.html">
 						<div class="container" style="width: 50%;margin: 0 auto;">
-							<div class="FOURTH_BUTTON navbar-btn   green letter-space"> 
+							<div class="button navbar-btn   green letter-space"> 
 								<strong >Get Started</strong>
 							</div>	
 						</div>
@@ -166,10 +190,37 @@
 </section>
 
 <section class="section section_2 background-white">
-	<div class="container">
+
+	<div data-spy="scroll" data-target=".navbar" data-offset="20">
+		<nav class="navbar navbar-default" data-spy="affix" data-offset-top="850" style="background:#fff; border-top: none;">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		        <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		      </button> -->
+		      <!-- <a class="navbar-brand" href="#"><img src="" alt="" ></a> -->
+		    </div>
+		    <div class="col-md-offset-3">
+		      <div class="collapse navbar-collapse" id="myNavbar">
+		        <ul class="nav navbar-nav">
+		          <li class="active"><a href="#makeHire" >Make Hire</a></li>
+		          <li><a href="#negotiationCollaboration">Negotiation & Collaboration</a></li>
+		          <li><a href="#makingPayment">Making Payment</a></li>
+		          <li><a href="#protection"> Protection </a> </li>
+		        </ul>
+		      </div>
+		    </div>
+		  </div>
+		</nav>
+	</div>
+</section>
+<section class="section">
+	<!-- <div class="container">
 		<div class="top_margin">
-			<div class="col-md-12">
-				<div class="col-md-3 ">
+			<div class="col-md-12"> -->
+				<!-- <div class="col-md-3 ">
 					<div class="col-md-12 box">
 						<a href="#makeHire">
 							<i class="fa  fa-life-bouy fa-5x fa_small_in_media  color_green" aria-hidden="true"></i>
@@ -204,82 +255,88 @@
 					<div class="col-md-6">
 						<img src="" alt="" class="img-responsive">
 					</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 margin-top" >
-					<div class="col-md-6">
-						<div class="col-md-12">
-							<div class="row">
-								<h2 class="color_green text-capitalize"> <strong> What kind of Projects can I post?  </strong></h2>
-								<hr>
+			</div> -->
+			<section id="makeHire" class="section">
+				<div class="container-fluid " >
+					<div class="col-md-12 " style="margin-top: 70px;">
+						<div class="col-md-6">
+							<div class="col-md-12">
+								<div class="row">
+									<h2 class="color_green text-capitalize"> <strong> What kind of Projects can I post?  </strong></h2>
+									<hr>
+								</div>
+							</div>
+							<div class="col-md-12 text-justify">
+								<p> 
+								Any kind of idea, project or business can be done.These include design services, software designs or Hard product prototyping.  Our makers and creator Handle projects with creativity and brilliant imagination.
+									<br>Requiring either;
+									<ul>
+										<li>Individual or team-based</li>
+										<li>Milestone set project</li>
+										<li>Retainer term project</li>
+									</ul> 
+									
+								</p>
 							</div>
 						</div>
-						<div class="col-md-12 text-justify">
-							<p> 
-							Any kind of idea, project or business can be done.These include design services, software designs or Hard product prototyping.  Our makers and creator Handle projects with creativity and brilliant imagination.
-								<br>Requiring either;
-								<ul>
-									<li>Individual or team-based</li>
-									<li>Milestone set project</li>
-									<li>Retainer term project</li>
-								</ul> 
-								
-							</p>
-						</div>
-					</div>
-					<div class="col-md-6  margin-top ">
-						<img src="assets/img/project.jpg" alt="project" class="img-responsive img-rounded rounded">
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 margin-top" >
-					<div class="col-md-6  margin-top">
-						<img src="assets/img/mentoring.jpg" alt="mentoring" class="img-responsive img-rounded rounded">
-					</div>
-					<div class="col-md-6">
-						<div class="col-md-12">
-							<div class="row">
-								<h2 class="color_green text-capitalize"> <strong> How do I hire the right freelancer or find the right resident?
-						 </strong></h2>
-								<hr>
-							</div>
-						</div>
-						<div class="col-md-12 text-justify">
-							<p> 
-								Create a client profile and submit a clear job post (for Freelancer and clear mentorship request (for resident).<br> Ensure to clearly specify the skill required and location (if Applicable) within application. More for finding resident,clearly state the stage and duration of advice required.
-							</p>
+						<div class="col-md-6  margin-top ">
+							<img src="assets/img/client-project.jpg" alt="project" class="img-responsive img-rounded rounded">
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 margin-top" >
-					<div class="col-md-6">
-						<div class="col-md-12">
-							<div class="row">
-								<h2 class="color_green text-capitalize"> <strong>Can I Carry Out Project with a Team?  </strong></h2>
-								<hr>
+			</section id="negotiationCollaboration">
+			<section id="negotiationCollaboration" class="section">
+				<div class="container-fluid">
+					<div class="col-md-12 " >
+						<div class="col-md-6  margin-top">
+							<img src="assets/img/client-freelencer.jpg" alt="mentoring" class="img-responsive img-rounded rounded">
+						</div>
+						<div class="col-md-6">
+							<div class="col-md-12">
+								<div class="row">
+									<h2 class="color_green text-capitalize"> <strong> How do I hire the right freelancer or find the right resident?
+							 </strong></h2>
+									<hr>
+								</div>
+							</div>
+							<div class="col-md-12 text-justify">
+								<p> 
+									Create a client profile and submit a clear job post (for Freelancer and clear mentorship request (for resident).<br> Ensure to clearly specify the skill required and location (if Applicable) within application. More for finding resident,clearly state the stage and duration of advice required.
+								</p>
 							</div>
 						</div>
-						<div class="col-md-12 text-justify">
-							<p> 
-								Yes you can select and hire more than one freelancer to carry out a project.
-								Select and Hire freelancers who have applied for your particular job post. 
-								Negotiate with team and commence team collaboration upon initiating work
-								Process.
-							</p>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<img src="assets/img/mentorship.jpg" alt="mentorship" class="img-responsive img-rounded rounded">
 					</div>
 				</div>
-			</div>
-			<div class="row">
+			</section>
+			<section id="makingPayment" class="section">
+				<div class="container-fluid">
+					<div class="col-md-12 margin-top" >
+						<div class="col-md-6">
+							<div class="col-md-12">
+								<div class="row">
+									<h2 class="color_green text-capitalize"> <strong>Can I Carry Out Project with a Team?  </strong></h2>
+									<hr>
+								</div>
+							</div>
+							<div class="col-md-12 text-justify">
+								<p> 
+									Yes you can select and hire more than one freelancer to carry out a project.
+									Select and Hire freelancers who have applied for your particular job post. 
+									Negotiate with team and commence team collaboration upon initiating work
+									Process.
+								</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<img src="assets/img/client-team.jpg" alt="mentorship" class="img-responsive img-rounded rounded">
+						</div>
+					</div>
+				</div>
+			
+			<div class="container-fluid">
 				<div class="col-md-12 margin-top" >
 					<div class="col-md-6">
-						<img src="assets/img/value.jpg" alt="value return" class="img-responsive img-rounded rounded">
+						<img src="assets/img/client-payments.jpg" alt="value return" class="img-responsive img-rounded rounded">
 					</div>
 					<div class="col-md-6">
 						<div class="col-md-12">
@@ -296,7 +353,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			</section>
+			<section id="protection" class="section">
+			<div class="container-fluid">
 				<div class="col-md-12 margin-top" >
 					<div class="col-md-6">
 						<div class="col-md-12">
@@ -312,7 +371,7 @@
 								And engagement interphases. We ensure all milestones and projects are pre-approved by 
 								Clients before automated payments are made. Any dispute that may arise, we put project 
 								Or any payments on hold for a satisfactory resolution. Upon any disengagement of a project, 
-								For 20/80 method, 60% of balance fee is refunded to client. For milestones, further payments
+								For 20/80 method, 60% of balance fee is refunded to client. For milestones, further payments Is discontinued and balance fees, deducting our service charge, is paid back to Client.
 							</p>
 						</div>
 					</div>
@@ -321,6 +380,7 @@
 					</div>
 				</div>
 			</div>
+			</section>
 	    </div>
 	</div>
 </section>
@@ -415,11 +475,11 @@
 	</div>
 </section>
 
-<section class="section">
+<section class="section" id="faq">
 	<div class="container">
 
 <div class="page-header text-center">
-    <h2>Client Landing FAQ <small>Client Landing Frequently Asked Questions</small></h2>
+    <h2> <strong> Client Landing FAQ </strong> </h2>
 </div>
 
 <!-- Bootstrap FAQ - START -->
@@ -504,7 +564,7 @@
             <div id="collapseto" class="panel-collapse collapse">
                 <div class="panel-body">
                     <p class="color-black"> 
-						Our tool is easy to navigate and secured. Project expectations Are managed with signed contracts and built in project communication And engagement interphases. We ensure all milestones and projects are pre-approved by Clients before automated payments are made. Any dispute that may arise, we put project Or any payments on hold for a satisfactory resolution. Upon any disengagement of a project, For 20/80 method, 60% of balance fee is refunded to client. For milestones, further payments
+						Our tool is easy to navigate and secured. Project expectations Are managed with signed contracts and built in project communication And engagement interphases. We ensure all milestones and projects are pre-approved by Clients before automated payments are made. Any dispute that may arise, we put project Or any payments on hold for a satisfactory resolution. Upon any disengagement of a project, For 20/80 method, 60% of balance fee is refunded to client. For milestones, further payments Is discontinued and balance fees, deducting our service charge, is paid back to Client.
 					</p>
                 </div>
             </div>
